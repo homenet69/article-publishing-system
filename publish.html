@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publiser Ny Artikkel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="publish-container">
+        <h1>Publiser Ny Artikkel</h1>
+        <form id="publishForm">
+            <label for="title">Tittel</label>
+            <input type="text" id="title" name="title" placeholder="Skriv artikkel tittel her..." required>
+            
+            <label for="content">Innhold</label>
+            <textarea id="content" name="content" placeholder="Skriv artikkel innhold her..." required></textarea>
+            
+            <div class="publish-options">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="useMotstromsmedia" name="useMotstromsmedia">
+                    <span class="checkmark"></span>
+                    Publiser til MotStrømsMedia (http://100.74.157.99:3000)
+                </label>
+                
+                <div class="advanced-options" id="advancedOptions" style="display: none;">
+                    <label for="author">Forfatter (valgfritt)</label>
+                    <input type="text" id="author" name="author" placeholder="Standard: Blackbox AI">
+                    
+                    <label for="summary">Sammendrag (valgfritt)</label>
+                    <textarea id="summary" name="summary" placeholder="Kort beskrivelse av artikkelen..."></textarea>
+                    
+                    <label for="categories">Kategorier</label>
+                    <select id="categories" name="categories" multiple>
+                        <option value="helse">Helse</option>
+                        <option value="alternativ_medisin">Alternativ medisin</option>
+                        <option value="politikk">Politikk</option>
+                        <option value="krig">Krig</option>
+                        <option value="teknologi" selected>Teknologi</option>
+                        <option value="økonomi">Økonomi</option>
+                        <option value="kultur">Kultur</option>
+                        <option value="medier">Medier</option>
+                        <option value="klima">Klima</option>
+                    </select>
+                    <small>Hold Ctrl/Cmd for å velge flere kategorier</small>
+                    
+                    <label for="imageUrl">Bilde-URL (valgfritt)</label>
+                    <input type="url" id="imageUrl" name="imageUrl" placeholder="https://example.com/image.jpg">
+                </div>
+            </div>
+            
+            <button type="submit">Publiser Artikkel</button>
+        </form>
+        <div id="publishResult"></div>
+    </div>
+    <script src="publish.js"></script>
+</body>
+</html>
