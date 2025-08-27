@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+/* Publish Article Page Styles */
+.publish-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.publish-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.publish-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.publish-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.publish-container input[type="text"],
+.publish-container textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.2s ease;
+}
+
+.publish-container input[type="text"]:focus,
+.publish-container textarea:focus {
+    outline: none;
+    border-color: #d32f2f;
+}
+
+.publish-container textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+.publish-options {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border-left: 4px solid #d32f2f;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    accent-color: #d32f2f;
+}
+
+.checkbox-label:hover {
+    color: #333;
+}
+
+.advanced-options {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.advanced-options label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+    color: #555;
+}
+
+.advanced-options label:first-child {
+    margin-top: 0;
+}
+
+.advanced-options input[type="text"],
+.advanced-options input[type="url"],
+.advanced-options textarea,
+.advanced-options select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.advanced-options textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+.advanced-options select {
+    min-height: 100px;
+}
+
+.advanced-options small {
+    color: #666;
+    font-size: 0.8em;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.publish-container button {
+    padding: 12px;
+    background-color: #d32f2f; /* red tone matching "Skriv Ny Artikkel" */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.publish-container button:hover {
+    background-color: #b71c1c;
+}
+
+.publish-container button:active {
+    background-color: #8d1414;
+}
+
+#publishResult {
+    margin-top: 20px;
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .publish-container {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .publish-container h1 {
+        font-size: 1.5em;
+    }
+}
